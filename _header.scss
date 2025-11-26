@@ -1,0 +1,11 @@
+.header {
+    background-color: rgba(0, 0, 0, 0.42);
+    @include flex-container(center, space-around);
+    padding: 45px 0;
+}
+
+@media screen and (max-width:479px) {
+    .header {
+        flex-direction: column;
+    }
+}

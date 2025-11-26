@@ -1,0 +1,15 @@
+.icons {
+    @include flex-container(center, space-around);
+    margin-top: 60px;
+    transition: all 0.5s linear;
+    &__item {
+        font-size: 2.5rem;
+        color: $primary-color;
+        &:not(last-of-type) {
+            margin-right: 40px;
+        }
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}

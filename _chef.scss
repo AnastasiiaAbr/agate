@@ -1,0 +1,37 @@
+.chef {
+    background-color: $bg-color;
+    @include flex-container(center, center);
+    flex-direction: column;
+    text-align: center;
+    &__subtitle {
+        font-size: $large-font-size;
+        margin: 30px 0;
+    }
+    &__text {
+        max-width: 939px;
+        @include text-size($extralarge-font-size, $light-font-weight);
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .chef {
+        &__subtitle,
+        &__text {
+            font-size: $medium-font-size;
+            max-width: 691px;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .chef {
+        &__subtitle,
+        &__text {
+            font-size: 1rem;
+            max-width: 626px;
+        }
+        &__subtitle {
+            margin: 20px 0;
+        }
+    }
+}
