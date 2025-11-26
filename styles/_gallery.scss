@@ -1,0 +1,4 @@
+.gallery {
+    @include flex-container(center, space-around);
+    flex-wrap: wrap;
+}

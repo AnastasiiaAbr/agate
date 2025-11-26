@@ -1,0 +1,17 @@
+.chef-img {
+    width: 398px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+    .chef-img {
+        width: 282px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .chef-img {
+        width: 251px;
+        margin-bottom: 20px;
+    }
+}

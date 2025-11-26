@@ -1,0 +1,30 @@
+.button {
+    @include text-center;
+    display: block;
+    border: 2px solid $primary-color;
+    border-radius: 30px;
+    width: 312px;
+    height: 60px;
+    line-height: 60px;
+    font-weight: 600;
+    transition: all 1s linear;
+    &:hover {
+        background-color: $button-color;
+        color: $primary-color;
+        border: 1px solid $button-color;
+    }
+    &--black {
+        color: #000;
+        border: 2px solid #000;
+        margin-top: 77px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .button {
+        width: 248px;
+        height: 48px;
+        line-height: 48px;
+        font-size: 0.85rem;
+    }
+}

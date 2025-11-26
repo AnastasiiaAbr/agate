@@ -1,0 +1,39 @@
+.navigation {
+    @include flex-container(center, space-around);
+    &__link {
+        font-size: $medium-font-size;
+        transition: all .5s;
+        &:hover {
+            transform: scale(1.05);
+        }
+        &:not(:last-child)::after {
+            content: "";
+            border: 1px solid #D8D5D5;
+            height: 16px;
+            display: inline-block;
+            margin: 0 25px;
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .navigation {
+        &__link {
+            font-size: $small-font-size;
+        }
+    }
+}
+
+@media screen and (max-width:479px) {
+    .navigation {
+        flex-direction: column;
+        &__link {
+            &:not(:last-child)::after {
+                width: 16px;
+                height: 0;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+}
